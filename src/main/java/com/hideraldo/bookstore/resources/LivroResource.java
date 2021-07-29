@@ -33,6 +33,7 @@ public class LivroResource {
 	@Autowired
 	private LivroService service;
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Livro> findById(@PathVariable Integer id){
 		Livro obj = service.findById(id);

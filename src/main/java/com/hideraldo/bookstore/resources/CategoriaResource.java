@@ -31,6 +31,7 @@ public class CategoriaResource {
 	@Autowired
 	private CategoriaService service;
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Categoria> findById(@PathVariable Integer id){
 		Categoria obj = service.findById(id);
