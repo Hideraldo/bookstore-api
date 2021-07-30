@@ -23,9 +23,9 @@ import com.hideraldo.bookstore.domain.Categoria;
 import com.hideraldo.bookstore.dtos.CategoriaDTO;
 import com.hideraldo.bookstore.service.CategoriaService;
 
-//@CrossOrigin("*")
+@CrossOrigin("*")
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/categorias")
 public class CategoriaResource {
 	
