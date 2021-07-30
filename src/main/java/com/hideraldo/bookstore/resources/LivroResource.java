@@ -25,8 +25,9 @@ import com.hideraldo.bookstore.domain.Livro;
 import com.hideraldo.bookstore.dtos.LivroDTO;
 import com.hideraldo.bookstore.service.LivroService;
 
-@CrossOrigin("*")
+//@CrossOrigin("*")
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping(value = "/livros")
 public class LivroResource {
 	

@@ -23,15 +23,15 @@ import com.hideraldo.bookstore.domain.Categoria;
 import com.hideraldo.bookstore.dtos.CategoriaDTO;
 import com.hideraldo.bookstore.service.CategoriaService;
 
-@CrossOrigin("*")
+//@CrossOrigin("*")
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/categorias")
 public class CategoriaResource {
 	
 	@Autowired
 	private CategoriaService service;
 	
-	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Categoria> findById(@PathVariable Integer id){
 		Categoria obj = service.findById(id);
